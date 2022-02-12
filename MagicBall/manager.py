@@ -21,9 +21,9 @@ class Manager(ScreenManager):
         self.good_chance = GoodChance(self, name="шансы хорошие")
         self.doubts = Doubts(self, name="есть сомнения")
         self.hard_question = HardQuestion(self, name="сложный вопрос")
-        self.impossible = Impossible(self, name="я не могу на это ответить")
+        self.impossible = Impossible(self, name="не выйдет")
         self.unlikely = Unlikely(self, name="маловероятно")
-        self.dont_know = DontKnow(self, name="не выйдет")
+        self.dont_know = DontKnow(self, name="я не могу на это ответить")
 
         self.add_widget(self.ask_question)
         self.add_widget(self.absolutely)
